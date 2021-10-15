@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DotSave.app</string>
+    <string name="enter_Text">Enter Pinterest\'s Link here ...</string>
+    <string name="btn_load">Download</string>
+    <string name="notify_empty">Please check your link ...</string>
+    <string name="loading">Loading...</string>
+</resources>
