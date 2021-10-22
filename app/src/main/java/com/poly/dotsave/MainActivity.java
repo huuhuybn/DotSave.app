@@ -103,12 +103,10 @@ public class MainActivity extends AppCompatActivity {
                 .getAsString(new StringRequestListener() {
                     @Override
                     public void onResponse(String response) {
-                        Log.e("stta", response);
                         btnLoad.setEnabled(true);
                         btnLoad.setText(getString(R.string.btn_load));
                         Gson gson = new Gson();
                         Response res = gson.fromJson(response, Response.class);
-                        Log.e("abc", res.getBody().getTitle());
                         if (videos.size() > 0) {
                             videos = new ArrayList<>();
                             videoAdapter = new VideoAdapter(MainActivity.this, videos);
