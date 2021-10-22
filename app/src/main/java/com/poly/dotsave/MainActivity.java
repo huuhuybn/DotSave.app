@@ -109,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
                         Gson gson = new Gson();
                         Response res = gson.fromJson(response, Response.class);
                         Log.e("abc", res.getBody().getTitle());
+                        if (videos.size() > 0) {
+                            videos = new ArrayList<>();
+                            videoAdapter = new VideoAdapter(MainActivity.this, videos);
+                        }
 
 
                         videoAdapter.setTitle(res.getBody().getTitle());
