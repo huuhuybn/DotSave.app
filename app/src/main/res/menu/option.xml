@@ -7,7 +7,7 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/home"
-        android:title="Home" />
+        android:title="Privacy" />
 
     <item
         android:id="@+id/about"

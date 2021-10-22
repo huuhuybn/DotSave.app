@@ -112,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
                             videoAdapter = new VideoAdapter(MainActivity.this, videos);
                         }
 
-
                         videoAdapter.setTitle(res.getBody().getTitle());
                         videoAdapter.setDescription(res.getBody().getDescription());
                         videos.addAll(res.getBody().getVideos());
@@ -153,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, HistoryActivity.class));
                 break;
             case R.id.home:
-                String url = "https://dotsave.app";
+                String url = "https://dotsave.app/privacy";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
