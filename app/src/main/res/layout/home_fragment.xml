@@ -12,17 +12,42 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtText"
-            android:text="https://www.pinterest.com/pin/526639750183474523"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_Text" />
+            android:hint="@string/enter_Text"
+            android:text="https://www.pinterest.com/pin/526639750183474523" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnLoad"
-        android:text="@string/btn_load"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/btn_load" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Step 1 : Paste the Pinterest Link and click Download" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Step 2 :Wait few senconds and choose your video" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvListVideos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvListImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
