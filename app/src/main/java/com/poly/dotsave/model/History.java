@@ -9,6 +9,24 @@ public class History {
     private static final int MINUTE_MILLIS = 60 * SECOND_MILLIS;
     private static final int HOUR_MILLIS = 60 * MINUTE_MILLIS;
     private static final int DAY_MILLIS = 24 * HOUR_MILLIS;
+    public String title, thumb;
+
+
+
+    public History(int id,String link, String title, String thumb, String time) {
+        this.link = link;
+        this.time = time;
+        this.id = id;
+        this.title = title;
+        this.thumb = thumb;
+    }
+
+    public History(String link, String time, String title, String thumb) {
+        this.link = link;
+        this.time = time;
+        this.title = title;
+        this.thumb = thumb;
+    }
 
     public String getTime() {
         long now = System.currentTimeMillis();

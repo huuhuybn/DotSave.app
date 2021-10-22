@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/activity_history.xml" value="0.2484375" />
         <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/activity_main.xml" value="0.27239583333333334" />
+        <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/history.xml" value="0.5" />
         <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/history_fragment.xml" value="0.27239583333333334" />
         <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/home_fragment.xml" value="0.27239583333333334" />
         <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/image.xml" value="0.27239583333333334" />
         <entry key="..\:/AndroidProject/DotSave/app/src/main/res/layout/video.xml" value="0.27239583333333334" />
+        <entry key="..\:/AndroidProject/DotSave/app/src/main/res/menu/option.xml" value="0.27239583333333334" />
       </map>
     </option>
   </component>

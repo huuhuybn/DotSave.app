@@ -19,7 +19,7 @@ public class ImageHolder extends RecyclerView.ViewHolder {
     public ImageHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.imageView);
-        btnDownload = itemView.findViewById(R.id.btnDownload);
+        btnDownload = itemView.findViewById(R.id.btnPlay);
         textView = itemView.findViewById(R.id.textView);
     }
 }

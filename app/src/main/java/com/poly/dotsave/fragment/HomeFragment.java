@@ -24,11 +24,13 @@ import com.androidnetworking.interfaces.StringRequestListener;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.poly.dotsave.R;
+import com.poly.dotsave.SqliteHelper;
 import com.poly.dotsave.adapter.ImageAdapter;
 import com.poly.dotsave.adapter.VideoAdapter;
 import com.poly.dotsave.gson.Image;
 import com.poly.dotsave.gson.Response;
 import com.poly.dotsave.gson.Video;
+import com.poly.dotsave.model.History;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -120,6 +122,10 @@ public class HomeFragment extends Fragment {
                         videoAdapter.setDescription(res.getBody().getDescription());
                         videos.addAll(res.getBody().getVideos());
                         videoAdapter.notifyDataSetChanged();
+
+                        SqliteHelper sqliteHelper = new SqliteHelper(getActivity());
+                        sqliteHelper.insert(new History(res.getBody().getVideos().get(0).getUrl(), String.valueOf(System.currentTimeMillis()),
+                                res.getBody().getTitle(), res.getBody().getVideos().get(0).getThumbnail()));
 
 
 //                        imageAdapter.setTitle(res.getBody().getTitle());
